@@ -13,7 +13,7 @@ class NameForm(forms.Form):
                                                           'placeholder' : 'Password'}))
     password2 = forms.CharField(max_length=100, label="Confirm Password",
                             widget=forms.TextInput(attrs={'class': 'myfieldclass',
-                                                          'placeholder' : 'Confirm Password',
-                                                          'style': 'background-color: bisque; color: red;'}))
+                                                          'placeholder' : 'Confirm Password'
+                                                          }))
 
 

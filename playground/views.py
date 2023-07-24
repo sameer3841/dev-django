@@ -26,10 +26,7 @@ def say_hello(request):
             password1 = form.cleaned_data['password1']
             password2 = form.cleaned_data['password2']
             
-            return render(request, 'index.html', {'name' : name,
-                                                  'email' : email,
-                                                  'password1': password1,
-                                                  'password2': password2})
+            return render(request, 'index.html', {'name' : name})
 
 
     # if a GET (or any other method) we'll create a blank form

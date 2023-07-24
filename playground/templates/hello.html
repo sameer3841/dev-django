@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="{% static 'style.css' %}">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
@@ -14,7 +13,7 @@
         <!--password2-->
         
         <h1>Register Here</h1>
-        <form action="/playground/main/" method="post" >
+        <form action="say_hello" method="post" >
             {% csrf_token %}
             {{ form.as_p }}
             

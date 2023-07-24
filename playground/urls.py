@@ -3,6 +3,7 @@ from . import views
 
 #URLCol
 urlpatterns = [
-    path('hello/', views.say_hello),
-    path('main/', views.another_page_view),
+    path('', views.say_hello),
+    path('', views.another_page_view),
+    path('say_hello', views.say_hello)
 ]
